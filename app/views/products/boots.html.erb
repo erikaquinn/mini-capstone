@@ -1,0 +1,8 @@
+<h2>Hiking Boots: </h2>
+  <% @boots.each do |boot| %>
+ <h3><a href="/boots/<%= boot.id %>"><%= boot.name %></a></h3>
+ <h6><%= boot.price %></h6>
+  <p><%= boot.image %></p>
+  <p><%= boot.description %></p>
+
+<% end %>

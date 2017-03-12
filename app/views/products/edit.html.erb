@@ -1,0 +1,17 @@
+<h1>Edit Boot:</h1>
+<%= form_tag "/boots/#{@boot.id}", method: :patch do %>
+  <div class="form-group">
+    Name: <input type="text" class="form-control" value="<%= @boot.name %>" name="name">
+  </div>
+  <div class="form-group">
+    Price: <input type="text" class="form-control" value="<%= @boot.price %>" name="price">
+  </div>
+  <div class="form-group">
+    Image: <input type="text" class="form-control" value="<%= @boot.image %>" name="image">
+  </div>
+  <div class="form-group">
+    Description: <input type="text" class="form-control" value="<%= @boot.description %>" name="description">
+  </div>
+  <input type="submit" class="btn btn-default" value="Update boot">
+<% end %>
+

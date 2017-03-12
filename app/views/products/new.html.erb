@@ -1,0 +1,16 @@
+<h1>New Hiking Boot:</h1>
+<%= form_tag "/boots", method: :post do %>
+  <div>
+    Name: <input type="text" name="name">
+  </div>
+  <div>
+    Price: <input type="text" name="price">
+  </div>
+  <div>
+    Image (URL): <input type="text" name="image">
+  </div>
+  <div>
+    Description: <input type="text" name="description">
+  </div>
+  <input type="submit" value="Add Boot">
+<% end %>
