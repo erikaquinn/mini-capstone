@@ -1,6 +1,24 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.well {
+  min-height: 340px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  font-family: Verdana,Geneva,sans-serif;
+  background-image: url('denim.png');
+}
+
+.navbar-brand {
+  font-family: 'Ultra', serif;
+  font-size: 2em;
+}
+
+
+
+
 
 h1 {
   color: #0c644b;
@@ -10,3 +28,4 @@ h1 {
 h2 {
   color: #6A0A13;
 }
+

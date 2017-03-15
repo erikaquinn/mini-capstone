@@ -1,8 +1,15 @@
 <h2>Hiking Boots: </h2>
+<div class="row"
   <% @boots.each do |boot| %>
+    <div class="well">
  <h3><a href="/boots/<%= boot.id %>"><%= boot.name %></a></h3>
  <h6><%= boot.price %></h6>
-  <p><%= boot.image %></p>
+  <img class="boot-image" src="<%= boot.image%>" alt="<%= boot.name %>">
   <p><%= boot.description %></p>
-
+  </div>
+</div>
 <% end %>
+
+
+
+
