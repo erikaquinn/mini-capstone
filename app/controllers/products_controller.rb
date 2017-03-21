@@ -32,6 +32,7 @@ class ProductsController < ApplicationController
   end
 
   def show
+    boot_id = params[:id]
     if params[:id] == "random"
       @boot = Product.all.sample
     else
