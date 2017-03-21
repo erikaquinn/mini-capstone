@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get "/boots/:id/edit" => "products#edit"
   patch "/boots/:id" => "products#update"
   delete "/boots/:id" => "products#destroy"
+
+  get "/random_boot" => "products#random"
 end

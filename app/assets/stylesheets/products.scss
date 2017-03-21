@@ -1,9 +1,14 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.recipe-image {
+  width: 50%;
+}
+
 .well {
   min-height: 340px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -17,9 +22,6 @@ body {
 }
 
 
-
-
-
 h1 {
   color: #0c644b;
   font-weight: bold;
@@ -29,3 +31,6 @@ h2 {
   color: #6A0A13;
 }
 
+.discount-item {
+  color: red;
+}
