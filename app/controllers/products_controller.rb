@@ -19,7 +19,8 @@ class ProductsController < ApplicationController
       name: params[:name],
       price: params[:price],
       image: params[:image],
-      description: params[:description]
+      description: params[:description],
+      user_id: current_user.id
       )
     boot.save
     flash[:success] = "Boot successfully created!"

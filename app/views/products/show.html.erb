@@ -1,16 +1,18 @@
 <h1>Product Info:</h1>
 <p></p>
 <div class="row">
-<h2><%= @boot.name %></h2>
-<div class="col-md-6">
-  <div class="well">
-<h4>Made by <%= @boot.supplier.name %><h4>
-<h3><%= @boot.price %></h3>
-<img class="boot-image" src="<%= @boot.image%>" alt="<%= @boot.name %>">
-<h3><%= @boot.description %></h3>
-<p></p>
-<p><%= link_to "Destroy boot", "/boots/#{@boot.id}", method: :delete %></p>
-<p><a href="/boots">Back to all boots</a></p>
-</div>
-</div>
+  <h2><%= @boot.name %></h2>
+    <div class="col-md-8">
+      <div class="well">
+        <h4>Made by <%= @boot.supplier.name %><h4>
+          <% @boot.images.each do |image| %>
+            <img src="<%= image.url %>" alt="<%= @boot.name %>" class="img-responsive">
+          <% end %>
+        <h3><%= @boot.description %></h3>
+        <p></p>
+        <p><%= link_to "Edit boot", "/boots/#{@boot.id}/edit" %></p>
+        <p><%= link_to "Destroy boot", "/boots/#{@boot.id}", method: :delete %></p>
+        <p><a href="/boots">Back to all boots</a></p>
+      </div>
+    </div>
 </div>
